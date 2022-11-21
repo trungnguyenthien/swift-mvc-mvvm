@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="312" id="Oha-XS-yxV" customClass="BannerRow" customModule="Sample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="312"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Oha-XS-yxV" id="qL2-7p-lz3">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="312"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="[BANNER 1]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vn3-vL-DBG">
+                        <rect key="frame" x="124.66666666666669" y="5" width="141" height="251"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="dXP-ga-S6q"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vn3-vL-DBG" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qL2-7p-lz3" secondAttribute="top" priority="999" constant="5" id="Wf8-ma-pu7"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vn3-vL-DBG" secondAttribute="bottom" priority="998" constant="5" id="bXc-KK-pUk"/>
+                    <constraint firstItem="vn3-vL-DBG" firstAttribute="centerX" secondItem="qL2-7p-lz3" secondAttribute="centerX" id="jIb-3h-Kba"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" systemColor="systemGreenColor"/>
+            <connections>
+                <outlet property="bannerLabel" destination="vn3-vL-DBG" id="R4v-SQ-uVb"/>
+            </connections>
+            <point key="canvasLocation" x="164.61538461538461" y="35.545023696682463"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

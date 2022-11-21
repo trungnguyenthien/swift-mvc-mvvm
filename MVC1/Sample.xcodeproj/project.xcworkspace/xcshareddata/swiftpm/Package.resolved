@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "nuke",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kean/Nuke.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "bc2f94b267d2b2514e5a21352012786f66429cc7"
+      }
+    }
+  ],
+  "version" : 2
+}
